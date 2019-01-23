@@ -1,13 +1,14 @@
-hello-react-and-typescript
-==========================
+# hello-react-and-typescript
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Bootstrap project
+
     yarn create react-app <app-name> --typescript
 
 ## Links
 
+- [Hello React and TypeScript](https://charleslbryant.gitbooks.io/hello-react-and-typescript/content/index.html)
 - [Adding TypeScript](https://facebook.github.io/create-react-app/docs/adding-typescript)
 - [Validating Props easily with React PropTypes](https://codeburst.io/validating-props-easily-with-react-proptypes-96e80208207)
 - [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
