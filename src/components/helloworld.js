@@ -1,19 +1,18 @@
 import * as React from "react";
 import HelloForm from "./helloform";
 import HelloContent from "./hellocontent";
+import PropTypes from "prop-types";
 
-export default class HelloWorld extends React.Component<any, any> {
-  constructor(props: any) {
+export default class HelloWorld extends React.Component {
+  constructor(props) {
     super(props);
     this.state = { name: this.props.defaultName };
     this.handleChange = this.handleChange.bind(this);
   }
 
-  public handleChange(event: any): void {
-    this.setState({ name: event.target.value });
-  }
+  handleChange = (event) => this.setState({ name: event.target.value });
 
-  public render() {
+  render() {
     return (
       <div>
         <HelloForm name={this.state.name} handleChange={this.handleChange} />
@@ -21,4 +20,8 @@ export default class HelloWorld extends React.Component<any, any> {
       </div>
     );
   }
+}
+
+HelloWorld.propTypes = {
+  defaultName: PropTypes.string
 }
